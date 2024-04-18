@@ -1,0 +1,81 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr 3fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    ". sky sky ."
+    ". loc loc ."
+    ". temp temp ."
+    "gr gr gr gr"
+    ;
+}
+.day {
+  background-color: #00f7ff;
+}
+.night {
+  background-color: #15595c;
+}
+.sky {
+  grid-area: sky;
+}
+.sky img {
+  height: 300px;
+}
+.localization {
+  display: flex;
+  grid-area: loc;
+  align-items: start;
+  justify-self: self-end;
+}
+#localizationOutput {
+  background-color: #15595c;
+  width: 230px;
+  font-size: 3rem;
+  border: none;
+}
+.buttonLocalizationBox {
+  display: flex;
+  flex-direction: column;
+}
+.temp {
+  display: flex;
+  grid-area: temp;
+  font-size: 5rem;
+  align-items: start;
+  justify-self: flex-end;
+}
+.ground {
+  background-color: #008000;
+  width: 100%;
+  grid-area: gr;
+  border-top: 10px dashed #335705;
+}
+/* ADDITIONAL CSS */
+button {
+  padding: 5px 10px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px 0px #000;
+  cursor: pointer;
+  background-color: #15595c;
+  border: none;
+  color: #fff;
+  margin: 2px;
+}
+button:hover {
+  background-color: #1d8186;
+}
+button:active {
+  box-shadow: inset 1px 1px 5px 0px #000;
+}
