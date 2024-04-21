@@ -30,7 +30,7 @@ main {
   grid-area: sky;
 }
 .sky img {
-  height: 300px;
+  height: 200px;
 }
 .localization {
   display: flex;
@@ -42,15 +42,17 @@ main {
   width: 100%;
   font-size: 3rem;
   text-align: end;
+  margin: 0 10px;
 }
 .locIOShow {
-  background-color: #92c6c9;
-  border-width: 4px;
-  padding: 0 20px;
+  background-color: #78a6a8;
+  border-width: 1px;
+  padding: 0 10px;
 }
 .locIOHide {
   background-color: #15595c;
   border: none;
+  cursor: default;
 }
 .buttonLocalizationBox {
   display: flex;

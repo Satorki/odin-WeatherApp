@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Odin WeatherApp</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+    <script src="/scripts/index.js" type="module" defer></script>
   </head>
   <body>
     <main class="night">
       <section class="sky">
         <div id="skyOutput">
-          <img src="/icons/cloud-normal.svg" alt="" />
+          <img src="" alt="" />
         </div>
       </section>
       <section class="localization">
@@ -19,8 +19,9 @@
           type="text"
           name="localizationIO"
           id="localizationIO"
-          value="Warszawa"
+          value=""
           class="locIOHide"
+          readonly="true"
         />
         <div class="buttonLocalizationBox">
           <button id="localizationButtonOpen">localization</button>
@@ -29,7 +30,7 @@
       </section>
       <section class="temp">
         <div id="tempOutput">
-          <span id="tempNumber">24 </span><span id="tempUnit">°C</span>
+          <span id="tempNumber"></span><span id="tempUnit">°C</span>
         </div>
         <button id="tempButton">C/F</button>
       </section>
